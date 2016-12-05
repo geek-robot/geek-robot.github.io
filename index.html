@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="utf-8">
+      <title>GEEK ROBOT</title>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <meta name="description" content="Geek Robot : Gesture Controlled Robot with Autonomous Mapping.">
+      <meta name="keywords" content="arduino, slams, wavefront algorithem, gesture, accelerometer, information technology unviersity, electronics, emebedded system, robotics">
+      <meta name="author" content="Linear Circuit Analysis Project">
+      <link rel="publisher" href="https://plus.google.com/+UsamaAbid4/">
+
+      <!-- Le styles -->
+      <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+      <!--[if IE 7]>
+      <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css">
+      <![endif]-->
+
+      <link href="assets/css/bootplus.css" rel="stylesheet">
+      <link href="assets/css/bootplus-responsive.css" rel="stylesheet">
+
+      <link href="assets/css/docs.css" rel="stylesheet">
+      <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+      <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+      <!--[if lt IE 9]>
+        <script src="assets/js/html5shiv.js"></script>
+      <![endif]-->
+
+      <!-- Le fav and touch icons -->
+      <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+      <script type="text/javascript">
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-60010264-1', 'auto');
+		ga('send', 'pageview');
+	 </script>
+  </head>
+
+<body data-spy="scroll" data-target=".bs-docs-sidebar">
+
+    <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="./index.html">GEEKS ROBOT</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active">
+                <a href="./index.html">Home</a>
+              </li>
+              <li class="">
+                <a href="./about.html">About</a>
+              </li>
+              <li class="">
+                <a href="./project.html">Project</a>
+              </li>
+              <li class="">
+                <a href="./p-gallery.html">Project Gallery</a>
+              </li>
+              <li class="">
+                <a href="./ack.html">Acknowledgements</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Subhead
+================================================== -->
+<header class="jumbotron subhead masthead" id="overview">
+  <div class="container" style="text-align:center">
+    <h1>Gesture Controlled Robot </br> with </br> Autonomous Mapping</h1>
+    <p class="lead">A project for first Electronics Course (Linear Circuit Analysis) offered at Information Technology University, Lahore.</p>
+  </div>
+</header>
+
+<div class="container">
+
+  <div class="row-fluid">
+       
+	<div class="row-fluid">
+			<div class="span8">
+				<!--div class="bs-docs-example">
+					<--iframe frameborder="0" width="730" height="340" src="//www.dailymotion.com/embed/video/x2htunl" allowfullscreen></iframe><br /><a href="http://www.dailymotion.com/video/x2htunl_gesture-controlled-robot-working-prototype_school" target="_blank">Gesture Controlled Robot - Working Prototype</a> <i>by <a href="http://www.dailymotion.com/usamaabid" target="_blank">usamaabid</a></i><
+					</div-->
+			<div class="bs-docs-example">		
+			<div id="myCarousel" class="carousel slide">
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+                  <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+                  <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="item">
+                    <img src="assets/pj/1.jpg" alt="">
+                    <div class="carousel-caption">
+                      <h4>Gesture Control at Mid-Evaluation</h4>
+                      <p>Gesture Controlled Robot at its mid-evaluation. Wireless communication is yet to be desgined.</p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="assets/pj/2.jpg" alt="">
+                    <div class="carousel-caption">
+                      <h4>Sensors Calibration</h4>
+                      <p>Calibrating ADX335 3-Axis Accelerometer according to hand gestures based on value dependant on +3g to -3g.</p>
+                    </div>
+                  </div>
+                  <div class="item active">
+                    <img src="assets/pj/3.jpg" alt="">
+                    <div class="carousel-caption">
+                      <h4>Building Robot</h4>
+                      <p>Intial Click of robot at building stage, testing components and assembling chassis.</p>
+                    </div>
+                  </div>
+                </div>
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+              </div>
+			</div>
+			</div
+			</div>
+		<div class="span4"><div class="card">
+            <h3 class="card-heading simple">Introduction</h3>
+            <div class="card-body">
+               <p>This is a Robotic Project for our first <b>Electrical Engineering</b> major Electronics Course (<a href="http://itu.edu.pk/talha-rehmani/circuits1/">Linear Circuit Analysis</a>) at <a href="http://www.itu.edu.pk">Information Technology University, Lahore</a>. </br>We have choose this project after getting inspired from the work done by google i.e. <a href="http://en.wikipedia.org/wiki/Google_driverless_car">Google Driverless Car</a>, in concept of making gesture controlled steered and drive vehicles. </br>Also we wanted to make autonomous robot which can fly and plot map of any area in which it is exposed to this is based on idea of disaster management to map the available paths in a disaster harmed building. In this semester scope we are going to plot map of regular enviornment using a robotic car.</p>
+			   <p><b>Date:</b> February, 2015</p>
+            </div>
+            <div class="card-actions">
+               <a class="btn btn-success" href="project.html">
+                  More Details
+                  <i class="icon-circle-arrow-right"></i>
+               </a>
+            </div>
+         </div>
+		 </div>
+	</div>
+	
+	
+	<div class="row marketing">
+
+      <div class="span4">
+		<div class="card">
+            <div class="card-media">
+               <a class="card-media-container" href="#">
+                  <img src="assets/img/1.jpg" alt="Project">
+               </a>
+            </div>
+            <div class="card-body">
+               <h2>Project Detail</h2>
+               <p>This project is based on two modules.</p> 
+			   <ul>
+					<li><b>Gesture Controlled Robotic Car</b></li>
+						<p>  This part is inspired from <a href="http://en.wikipedia.org/wiki/Google_driverless_car">Google Driverless Car</a>, the idea is basically making easy control for steered and derived vehicles.</p> 
+					<li><b>Autonomous Mapping Using Wave-front Algorithm</b></li>
+						<p>  This part of robot is motivated from the incident of earthquake i.e. 5 October, on which many disasters took place. So it is to form a disaster management product that can help to find available paths in disaster harmed building.</p>
+				</ul>
+			</div>
+         </div>
+
+      </div>
+
+      <div class="span4">
+
+		<div class="card">
+            <div class="card-media">
+               <a class="card-media-container" href="#">
+                  <img src="assets/img/3.jpg" alt="Languages">
+               </a>
+            </div>
+            <div class="card-body">
+               <h2>Languages Used</h2>
+               <p>Following are the languages used for making and research of this project.</p> 
+			   <ul>
+					<li><b>Arduino C/C++</b></li>
+					<li><b>Python 2.6</b></li>
+					<li><b>Node JS</b></li>
+					<li><b>Matlab (for processing 2-D Matrices)</b></li>
+					<li><b>Processing IDE (for GUI of Mapping)</b></li>
+				</ul>
+				<p>* All above languages are not used in direct relation to project. Most of them are used for preparatory research and prototype building. Also many open source projects are used as well mentioned on acknowledgements page.</p>
+			</div>
+         </div>
+      </div>
+
+      <div class="span4">
+         <div class="card">
+            <div class="card-media">
+               <a class="card-media-container" href="#">
+                  <img src="assets/img/2.jpg" alt="Components">
+               </a>
+            </div>
+            <div class="card-body">
+               <h2>Components Used</h2>
+               <p>Following are the components used for making this robot.</p> 
+			   <ul>
+					<li><b>Arduino UNO, Mega and Mini-Pro</b></li>
+					<li><b>Ultrasonic Sensor (HC-SR04)</b></li>
+					<li><b>Accelerometer ADXL335</b></li>
+					<li><b>Pre-Build 4WD DC motors based chassis</b></li>
+					<li><b>L298n Motor Drivers</b></li>
+					<li><b>nRF24L01-2.4GHz Radio Frequency Modules</b></li>
+				</ul>
+				<p>* As per requirement may be Gyro and Magnetometer might be implied to increase the preciseness of Gesture Control. Similarly in mapping algorithm high range IR & Lasers can also be incorporated if needed.</p>
+            </div>
+         </div>
+      </div>
+
+   </div>
+</div>
+</div>
+
+
+    <!-- Footer
+    ================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <p>All rights reserved to Team Geeks. This website is developed for Robotics Project exhibition of <a href="http://itu.edu.pk/talha-rehmani/circuits1/"> Linear Circuit Analysis</a></p>
+		<p><a href="http://www.itu.edu.pk">Information Technology University, Lahore</a></p>
+		<p>Exclusively crafted by <a href="https://pk.linkedin.com/in/usamaabid">Usama Abid</a>, using Bootplus (built of twitter bootstrap).</p>
+		<p>Proudly hosted on <i class="icon-github"></i><a href="http://github.com/pages"> Github</a></p>
+      </div>
+    </footer>
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-alert.js"></script>
+    <script src="assets/js/bootstrap-modal.js"></script>
+    <script src="assets/js/bootstrap-dropdown.js"></script>
+    <script src="assets/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/js/bootstrap-tab.js"></script>
+    <script src="assets/js/bootstrap-tooltip.js"></script>
+    <script src="assets/js/bootstrap-popover.js"></script>
+    <script src="assets/js/bootstrap-button.js"></script>
+    <script src="assets/js/bootstrap-collapse.js"></script>
+    <script src="assets/js/bootstrap-carousel.js"></script>
+    <script src="assets/js/bootstrap-typeahead.js"></script>
+    <script src="assets/js/bootstrap-affix.js"></script>
+
+    <script src="assets/js/holder/holder.js"></script>
+    <script src="assets/js/google-code-prettify/prettify.js"></script>
+
+    <script src="assets/js/application.js"></script>
+
+  </body>
+</html>

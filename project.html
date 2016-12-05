@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="utf-8">
+      <title>GEEK ROBOT</title>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <meta name="description" content="Geek Robot : Gesture Controlled Robot with Autonomous Mapping.">
+      <meta name="keywords" content="arduino, slams, wavefront algorithem, gesture, accelerometer, information technology unviersity, electronics, emebedded system, robotics">
+      <meta name="author" content="Linear Circuit Analysis Project">
+      <link rel="publisher" href="https://plus.google.com/+UsamaAbid4/">
+
+      <!-- Le styles -->
+      <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+      <!--[if IE 7]>
+      <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css">
+      <![endif]-->
+
+      <link href="assets/css/bootplus.css" rel="stylesheet">
+      <link href="assets/css/bootplus-responsive.css" rel="stylesheet">
+
+      <link href="assets/css/docs.css" rel="stylesheet">
+      <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+      <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+      <!--[if lt IE 9]>
+        <script src="assets/js/html5shiv.js"></script>
+      <![endif]-->
+
+      <!-- Le fav and touch icons -->
+      <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+      <script type="text/javascript">
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-60010264-1', 'auto');
+		ga('send', 'pageview');
+	 </script>
+	 <script src="./assets/processing.min.js"></script>
+  </head>
+
+<body data-spy="scroll" data-target=".bs-docs-sidebar">
+
+    <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="./index.html">GEEKS ROBOT</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="">
+                <a href="./index.html">Home</a>
+              </li>
+              <li class="">
+                <a href="./about.html">About</a>
+              </li>
+              <li class="active">
+                <a href="./project.html">Project</a>
+              </li>
+              <li class="">
+                <a href="./p-gallery.html">Project Gallery</a>
+              </li>
+              <li class="">
+                <a href="./ack.html">Acknowledgements</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Subhead
+================================================== -->
+<header class="jumbotron subhead masthead" id="overview">
+  <div class="container">
+    <h1> Project</h1>
+    <p class="lead">Project Technical description, Code, Schematics, Simulations & files/attachments.</p>
+  </div>
+</header>
+
+  <div class="container">
+
+    <!-- Docs nav
+    ================================================== -->
+    <div class="row">
+      <div class="span3 bs-docs-sidebar">
+        <ul class="nav nav-list bs-docs-sidenav">
+		<li class="nav-header" style="text-align:center">Project Data</li>
+          <li><a href="#pj-des"> Description</a></li>
+          <li><a href="#schematics"> Schematics</a></li>
+          <li><a href="#code"> Code</a></li>
+          <li><a href="#simulation"> Simulation</a></li>
+          <li><a href="#files"> Files/Attachments</a></li>
+        </ul>
+      </div>
+      <div class="span9">
+
+
+
+        <!-- Global Bootplus settings
+        ================================================== -->
+        <section id="pj-des">
+          <div class="page-header">
+            <h1>Project Description</h1>
+          </div>
+
+          <h3>Objective</h3>
+          <p>This robot basically for the disaster management,control purpose and to provide surveillance. Also it's objective is to ease control of steered and drive vehicles.</p>
+
+          <h3>Required Components</h3>
+          <p>Following is the list of components needed for this project:</p>
+          <ul>
+            <li>Robot car chassis with all parts ( 4 DC motors, 4 tyres, 2 Acrylic sheet, nut and bolts) </li>
+            <li>Solder and soldering iron </li>
+            <li>A lot of jumper wires </li>
+            <li>UltraSonic sensors </li>
+            <li>Radio Frequency Module NRF24 </li>
+            <li>Wire cutter/stripper </li>
+            <li>Arduino UNO board </li>
+            <li>9 V battery </li>
+            <li>L298 (Dual H-Bridge) based motor driving module </li>
+          </ul>
+          <h3>Description</h3>
+          <p>This robot has the ability to move according to the movement of the hand on with the accelerometer is attached.This robot is very efficient and can be used for surveillance purposes.This robot uses a simple logarithm to move according to the gesture of hand,it the hand is tilted towards right the robot will moved towards the right with a constant speed and as the hand is tilted towards left the robot will moved towards left,as the same is the case with the up and down movement of hand,up gesture will move the robot forward and the down gesture of the hand will move the robot backward,an accelerometer is attached and calibrated so that it gives the signals to robot to move towards the desired direction.The accelerometer is basically an analog electronic circuit or a micro controller that takes feedback input from sensors and direct the robot in the desired path.Two Radio Frequency Modules NRF24 are used for the transmission and the receiving of the accelerometer values.</p>
+
+        </section>
+
+
+
+
+        <!-- Grid system
+        ================================================== -->
+        <section id="schematics">
+          <div class="page-header">
+            <h1>Schematics</h1>
+          </div>
+		 <h3>Gesture Control</h3>
+         <img class="img-rounded" alt="Gestur Control" src="./assets/img/ges.png" >
+		<h3>Drive Assembly</h3>
+		<img class="img-rounded" alt="Gestur Control" src="./assets/img/robo.png"">
+        </section>
+
+
+
+        <!-- Fluid grid system
+        ================================================== -->
+        <section id="code">
+          <div class="page-header">
+            <h1>Project Code</h1>
+          </div>
+          <h3>Gesture Controlled Robot Code</h3>
+          <p>This code contains more of working code of Gesture Control Robot with calibrated<code> ADXL335</code> & <code> Motors Controlled</code>. </p>
+<pre class="prettyprint linenums">
+  //read the analog values from the accelerometer
+  int xRead = analogRead(xPin);
+  int yRead = analogRead(yPin);
+  int zRead = analogRead(zPin);
+
+  //convert read values to degrees -90 to 90 - Needed for atan2
+  int xAng = map(xRead, minVal, maxVal, -90, 90);
+  int yAng = map(yRead, minVal, maxVal, -90, 90);
+  int zAng = map(zRead, minVal, maxVal, -90, 90);
+
+  //Caculate 360deg values like so: atan2(-yAng, -zAng)
+  //atan2 outputs the value of -π to π (radians)
+  //We are then converting the radians to degrees
+  x = RAD_TO_DEG * (atan2(-yAng, -zAng) + PI);
+  y = RAD_TO_DEG * (atan2(-xAng, -zAng) + PI);
+  z = RAD_TO_DEG * (atan2(-yAng, -xAng) + PI);
+</pre>
+<p><button type="button" class="btn btn-info" href="./assets/bot/bot.ino">Download Complete Code</button></p>
+
+          <h3>Autonomous Mapping Robot</h3>
+          <p>This code contains more of working code of WaveFront Algorithm (Slams Based Basic Algorithem). It has more functionality of<code> UltraSonic Sensor(HC-SR04)</code> & <code> Time</code>. </p>
+<pre class="prettyprint linenums">
+	char mapping[6][6] = {{'1','1','1','1','1','1'},
+			      {'1','1','1','1','1','1'},
+                              {'1','1','1','1','1','1'},
+                              {'1','1','1','1','1','1'},
+                              {'1','1','1','1','1','1'},
+                              {'1','1','1','1','1','1'}};
+	    i=5;
+      //j=0;
+      mapping[i][j]='*';
+      right1=watch_right();
+      if(right1==180)
+      {
+        for(int a=0; a<6; a++)
+        {
+          if(mapping[a][j]=='0')
+          {
+            mapping[a][j]='1';
+          }
+        }
+      }
+      j++;
+      y++;
+</pre>
+<p><button type="button" class="btn btn-info" href="./assets/map_bot/map_bot.ino">Download Complete Code</button></p>
+
+        </section>
+
+
+
+
+        <!-- simulation (Default and fluid)
+        ================================================== -->
+        <section id="simulation">
+          <div class="page-header">
+            <h1>Simulation</h1>
+          </div>
+		  
+			<canvas data-processing-sources="map.pde"></canvas>
+        </section>
+
+
+
+
+        <!-- responsive design
+        ================================================== -->
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+    <!-- Footer
+    ================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <p>All rights reserved to Team Geeks. This website is developed for Robotics Project exhibition of <a href="http://itu.edu.pk/talha-rehmani/circuits1/"> Linear Circuit Analysis</a></p>
+		<p><a href="http://www.itu.edu.pk">Information Technology University, Lahore</a></p>
+		<p>Exclusively crafted by <a href="https://pk.linkedin.com/in/usamaabid">Usama Abid</a>, using Bootplus (built of twitter bootstrap).</p>
+		<p>Proudly hosted on <i class="icon-github"></i><a href="http://github.com/pages"> Github</a></p>
+      </div>
+    </footer>
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-alert.js"></script>
+    <script src="assets/js/bootstrap-modal.js"></script>
+    <script src="assets/js/bootstrap-dropdown.js"></script>
+    <script src="assets/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/js/bootstrap-tab.js"></script>
+    <script src="assets/js/bootstrap-tooltip.js"></script>
+    <script src="assets/js/bootstrap-popover.js"></script>
+    <script src="assets/js/bootstrap-button.js"></script>
+    <script src="assets/js/bootstrap-collapse.js"></script>
+    <script src="assets/js/bootstrap-carousel.js"></script>
+    <script src="assets/js/bootstrap-typeahead.js"></script>
+    <script src="assets/js/bootstrap-affix.js"></script>
+
+    <script src="assets/js/holder/holder.js"></script>
+    <script src="assets/js/google-code-prettify/prettify.js"></script>
+
+    <script src="assets/js/application.js"></script>
+
+<<<<<<< HEAD
+
+    <!-- Analytics
+    ================================================== -->
+
+=======
+>>>>>>> origin/master
+  </body>
+</html>
